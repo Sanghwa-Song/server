@@ -15,11 +15,11 @@ public class PersonalService {
     private final PersonalRepository personalRepository;
 
     @Transactional
-    public Long update(Long mem_num, PersonalDto personalDto) {
-        Personal personal = personalRepository.findById(mem_num).orElseThrow(
+    public Long update(Long memNum, PersonalDto personalDto) {
+        Personal personal = personalRepository.findById(memNum).orElseThrow(
                 () -> new IllegalArgumentException("해당 멤버 번호가 존재하지 않습니다.")
         );
         personal.update(personalDto);
-        return personal.getMem_num();
+        return personal.getMemNum();
     }
 }

@@ -13,7 +13,7 @@ public class Personal {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    private Long mem_num;
+    private Long memNum;
 
     @Column(nullable = false)
     private String id;
@@ -22,52 +22,47 @@ public class Personal {
     private String pwd;
 
     @Column(nullable = false)
-    private String name;
-
-    @Column(nullable = true)
-    private String interest;
-
-    @Column(nullable = true)
-    private Integer group_num;
+    private String nickName;
 
     @Column(nullable = false)
-    private Integer point;
-
-    @Column(nullable = false)
-    private Integer total_point;
-
-    @Column(nullable = false)
-    private String question;
-
-    @Column(nullable = false)
-    private String answer;
-
-    @Column(nullable = true)
     private Integer grade;
+
+    @Column(nullable = false)
+    private String address;
+
+    @Column(nullable = false)
+    private Integer phoneNum;
+
+    @Column(nullable = false)
+    private Byte[] profileImage;
+
+    @Column(nullable = false)
+    private String favorite1;
+
+    @Column(nullable = false)
+    private String favorite2;
 
     public Personal(PersonalDto personalDto) {
         this.id = personalDto.getId();
         this.pwd = personalDto.getPwd();
-        this.name = personalDto.getName();
-        this.interest = personalDto.getInterest();
-        this.group_num = personalDto.getGroup_num();
-        this.point = personalDto.getPoint();
-        this.total_point = personalDto.getTotal_point();
-        this.question = personalDto.getQuestion();
-        this.answer = personalDto.getAnswer();
+        this.nickName = personalDto.getNickName();
         this.grade = personalDto.getGrade();
+        this.address = personalDto.getAddress();
+        this.phoneNum = personalDto.getPhoneNum();
+        this.profileImage = personalDto.getProfileImage();
+        this.favorite1 = personalDto.getFavorite1();
+        this.favorite2 = personalDto.getFavorite2();
     }
 
     public void update(PersonalDto personalDto) {
         this.id = personalDto.getId();
         this.pwd = personalDto.getPwd();
-        this.name = personalDto.getName();
-        this.interest = personalDto.getInterest();
-        this.group_num = personalDto.getGroup_num();
-        this.point = personalDto.getPoint();
-        this.total_point = personalDto.getTotal_point();
-        this.question = personalDto.getQuestion();
-        this.answer = personalDto.getAnswer();
+        this.nickName = personalDto.getNickName();
         this.grade = personalDto.getGrade();
+        this.address = personalDto.getAddress();
+        this.phoneNum = personalDto.getPhoneNum();
+        this.profileImage = personalDto.getProfileImage();
+        this.favorite1 = personalDto.getFavorite1();
+        this.favorite2 = personalDto.getFavorite2();
     }
 }
