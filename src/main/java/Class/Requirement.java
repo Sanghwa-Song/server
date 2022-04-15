@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Getter
 @NoArgsConstructor
@@ -22,7 +23,7 @@ public class Requirement {
     private Long cafeNum;
 
     @Column(nullable = false)
-    private Long requireTime;
+    private LocalDateTime requireTime;
 
     @Column(nullable = false)
     private String requireReason;
