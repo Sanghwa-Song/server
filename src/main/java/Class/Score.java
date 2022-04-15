@@ -25,6 +25,42 @@ public class Score {
     private Long categoryNum;
 
     @Column(nullable = false)
+    private Integer tastePoint1;
+
+    @Column(nullable = false)
+    private Integer tastePoint2;
+
+    @Column(nullable = false)
+    private Integer tastePoint3;
+
+    @Column(nullable = false)
+    private Integer tastePoint4;
+
+    @Column(nullable = false)
+    private Integer seatPoint1;
+
+    @Column(nullable = false)
+    private Integer seatPoint2;
+
+    @Column(nullable = false)
+    private Integer seatPoint3;
+
+    @Column(nullable = false)
+    private Integer seatPoint4;
+
+    @Column(nullable = false)
+    private Integer studyPoint1;
+
+    @Column(nullable = false)
+    private Integer studyPoint2;
+
+    @Column(nullable = false)
+    private Integer studyPoint3;
+
+    @Column(nullable = false)
+    private Integer studyPoint4;
+
+    @Column(nullable = false)
     private Integer tastePoint1_AVG;
 
     @Column(nullable = false)
@@ -65,6 +101,19 @@ public class Score {
         this.reviewNum = scoreDto.getReviewNum();
         this.categoryNum = scoreDto.getCategoryNum();
 
+        this.tastePoint1 = scoreDto.getTastePoint1();
+        this.tastePoint2 = scoreDto.getTastePoint2();
+        this.tastePoint3 = scoreDto.getTastePoint3();
+        this.tastePoint4 = scoreDto.getTastePoint4();
+        this.seatPoint1 = scoreDto.getSeatPoint1();
+        this.seatPoint2 = scoreDto.getSeatPoint2();
+        this.seatPoint3 = scoreDto.getSeatPoint3();
+        this.seatPoint4 = scoreDto.getSeatPoint4();
+        this.studyPoint1 = scoreDto.getStudyPoint1();
+        this.studyPoint2 = scoreDto.getStudyPoint2();
+        this.studyPoint3 = scoreDto.getStudyPoint3();
+        this.studyPoint4 = scoreDto.getStudyPoint4();
+
         this.tastePoint1_AVG = scoreDto.getTastePoint1_AVG();
         this.tastePoint2_AVG = scoreDto.getTastePoint2_AVG();
         this.tastePoint3_AVG = scoreDto.getTastePoint3_AVG();
@@ -82,6 +131,19 @@ public class Score {
     public void update(ScoreDto scoreDto){
         this.cafeNum = scoreDto.getCafeNum();
         this.reviewNum = scoreDto.getReviewNum();
+
+        this.tastePoint1 = scoreDto.getTastePoint1();
+        this.tastePoint2 = scoreDto.getTastePoint2();
+        this.tastePoint3 = scoreDto.getTastePoint3();
+        this.tastePoint4 = scoreDto.getTastePoint4();
+        this.seatPoint1 = scoreDto.getSeatPoint1();
+        this.seatPoint2 = scoreDto.getSeatPoint2();
+        this.seatPoint3 = scoreDto.getSeatPoint3();
+        this.seatPoint4 = scoreDto.getSeatPoint4();
+        this.studyPoint1 = scoreDto.getStudyPoint1();
+        this.studyPoint2 = scoreDto.getStudyPoint2();
+        this.studyPoint3 = scoreDto.getStudyPoint3();
+        this.studyPoint4 = scoreDto.getStudyPoint4();
 
         this.tastePoint1_AVG = scoreDto.getTastePoint1_AVG();
         this.tastePoint2_AVG = scoreDto.getTastePoint2_AVG();

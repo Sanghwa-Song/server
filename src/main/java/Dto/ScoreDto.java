@@ -9,6 +9,19 @@ public class ScoreDto {
     private Long reviewNum;
     private Long categoryNum;
 
+    private Integer tastePoint1;
+    private Integer tastePoint2;
+    private Integer tastePoint3;
+    private Integer tastePoint4;
+    private Integer seatPoint1;
+    private Integer seatPoint2;
+    private Integer seatPoint3;
+    private Integer seatPoint4;
+    private Integer studyPoint1;
+    private Integer studyPoint2;
+    private Integer studyPoint3;
+    private Integer studyPoint4;
+
     private Integer tastePoint1_AVG;
     private Integer tastePoint2_AVG;
     private Integer tastePoint3_AVG;
