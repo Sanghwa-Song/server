@@ -94,7 +94,7 @@ public class TotalRestController {
 
 
     @GetMapping("/review") // create
-    public List<review> getReview() {
+    public List<Review> getReview() {
         return reviewRepository.findAll();
     }
 
@@ -120,7 +120,7 @@ public class TotalRestController {
 
 
     @GetMapping("/category") // create
-    public List<category> getCategory() {
+    public List<Category> getCategory() {
         return categoryRepository.findAll();
     }
 
